@@ -1,6 +1,5 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-const clickHint = document.getElementById('click-hint');
 
 let webs = [];
 let nextWebId = 0;
@@ -111,7 +110,6 @@ function growAll() {
 }
 
 function burstAt(x, y) {
-  clickHint.classList.add('hidden');
   createWeb(x, y);
   draw();
 }
