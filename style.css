@@ -2,3 +2,29 @@
 html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
 body { background: #07111f; color: #dceeff; font-family: system-ui, sans-serif; }
 canvas { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
+.process-note {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	left: 1rem;
+	max-width: 44rem;
+	margin: 0 auto;
+	padding: 0.75rem 1rem;
+	border: 1px solid rgba(220, 238, 255, 0.35);
+	border-radius: 4px;
+	background: rgba(7, 17, 31, 0.88);
+	color: rgba(220, 238, 255, 0.82);
+	font-size: 0.78rem;
+	line-height: 1.45;
+	pointer-events: none;
+}
+
+@media (max-width: 480px) {
+	.process-note {
+		right: 0.6rem;
+		bottom: 0.6rem;
+		left: 0.6rem;
+		padding: 0.65rem 0.75rem;
+		font-size: 0.72rem;
+	}
+}
