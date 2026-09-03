@@ -20,8 +20,10 @@ canvas { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
 }
 
 .system-panel {
+	right: auto;
 	top: 1rem;
-	bottom: auto;
+	left: 1rem;
+	margin: 0;
 }
 
 .process-note {
@@ -38,7 +40,9 @@ canvas { display: block; width: 100vw; height: 100vh; cursor: crosshair; }
 	}
 
 	.system-panel {
+		right: auto;
 		top: 0.6rem;
+		left: 0.6rem;
 	}
 
 	.process-note {
