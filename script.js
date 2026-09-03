@@ -3,8 +3,7 @@ const ctx = canvas.getContext('2d');
 
 let webs = [];
 let nextWebId = 0;
-const maxLines = 200;
-const maxVisibleLines = 240;
+const maxLines = 100;
 const growthInterval = 90;
 const fadeLineDuration = 1200;
 const fadeWaveDuration = 12000;
@@ -132,12 +131,7 @@ function draw() {
     ))
   ));
 
-  const allSegments = webs.flatMap(web => web.segments);
-  const visibleSegments = allSegments
-    .sort((first, second) => {
-      return first.distanceFromOrigin - second.distanceFromOrigin;
-    })
-    .slice(0, maxVisibleLines);
+  const visibleSegments = webs.flatMap(web => web.segments);
 
   ctx.clearRect(0, 0, innerWidth, innerHeight);
   ctx.lineCap = 'round';
