@@ -1,0 +1,3 @@
+This project is a webpage designed to run in the browser. 
+Link: ...
+The project is generative art. 
